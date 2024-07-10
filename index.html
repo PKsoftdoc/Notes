@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Notes</h1>
+    </div>
+    
+    <div class="container">
+        <div class="note-container">
+            <h2>Rich Dad poor Dad</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, libero eum itaque et ex pariatur suscipit perferendis est numquam ipsa laborum, nemo eveniet cupiditate fugiat! A at debitis dolore dolores.</p>
+            <button onclick="deletenote(event)">Delete</button>
+        </div>
+        
+    </div>
+
+    <div class="popup-overplay"></div>
+    <div class="popup-box">
+        <h2>Notes ! </h2>
+        <form>
+            <label>Title ?</label>
+            <input type="text" placeholder="Title..." id="title-input" required>
+            <label id="content">Content *</label>
+            <textarea placeholder="Start typing,..." id="title-description-input"></textarea>
+            <center>
+                <button id="addbtn">Add</button>
+                <button id="cancel" onclick="cancel()">Cancel</button>
+            </center>
+        </form>
+    </div>
+    
+    
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="main.js"></script>
+</body>
+</html>
